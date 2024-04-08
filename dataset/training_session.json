@@ -1,0 +1,19 @@
+{
+    "name": "Python Training",
+    "date": "April 19, 2024",
+    "completed": true,
+    "instructor": {
+     "name": "XYZ",
+     "website": "http://pqr.com/"
+    },
+    "participants": [
+      {
+        "name": "Participant 1",
+        "email": "email1@example.com"
+      },
+      {
+        "name": "Participant 2",
+        "email": "email2@example.com"
+      }
+    ]
+  }
