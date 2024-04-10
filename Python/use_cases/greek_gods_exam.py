@@ -19,4 +19,9 @@ print(df3.head(10))
 ################ 2
 
 df4 = df3[df3['Age']>8000].sort_values(by='Age', ascending=False)
+df4 = df3.query('Age>8000').sort_values(by='Age', ascending=False) 
 print(df4)
+
+############### 3
+
+##### do unit test on 1st 3
