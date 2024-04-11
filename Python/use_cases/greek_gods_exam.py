@@ -53,3 +53,21 @@ else:
 df1['Age_group'] = df1['Age'].apply(lambda y : 'Young' if y<5000 else ('Middle-aged' if (y>=5000 and y<=8000) else 'Old')) # .apply() takes every element from series/ndarray and apply required functyion on all elemens one by one
 df2['Age_group'] = df2['Age'].apply(lambda y : 'Young' if y<5000 else ('Middle-aged' if (y>=5000 and y<=8000) else 'Old')) 
 print(df1, df2, sep='\n')
+
+######### 6
+god_mean = df1['Age'].mean()
+goddess_mean = df2['Age'].mean()
+if god_mean<goddess_mean:
+    print(f"God group seems to be older by an average of {abs(god_mean-goddess_mean)}")
+else:
+    print(f"Goddess group seems to be older by an average of {abs(god_mean-goddess_mean)} years.")
+    
+########### 7
+df_gods=df1.rename(columns={'God':'God/Goddess'})
+df_godesses=df2.rename(columns={'Goddess':'God/Goddess'})
+
+df_merged = pd.concat([df_gods, df_godesses])
+
+for index, rows in df_merged.iterrows():
+    if rows['Age'] > 8000:
+        print(rows['God/Goddess'])
