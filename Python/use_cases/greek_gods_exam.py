@@ -63,6 +63,7 @@ else:
     print(f"Goddess group seems to be older by an average of {abs(god_mean-goddess_mean)} years.")
     
 ########### 7
+print("### 7 ###")
 df_gods=df1.rename(columns={'God':'God/Goddess'})
 df_godesses=df2.rename(columns={'Goddess':'God/Goddess'})
 
@@ -71,3 +72,13 @@ df_merged = pd.concat([df_gods, df_godesses])
 for index, rows in df_merged.iterrows():
     if rows['Age'] > 8000:
         print(rows['God/Goddess'])
+        
+########## 8
+print("### 8 ###")
+index_oldest = 0
+index, oldest = 0, df_merged['Age'].iloc[[5]].values[0]
+while index<len(df_merged):
+    if (current_age := df_merged['Age'].iloc[[index]].values[0]) > oldest:
+        index_oldest, oldest = index, current_age
+    index+=1
+print(f"The oldest {'god' if index_oldest<5 else 'goddess'} is {df_merged['God/Goddess'].iloc[[index_oldest]].values[0]}")
