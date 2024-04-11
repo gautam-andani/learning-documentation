@@ -36,6 +36,18 @@ class TestClass(unittest.TestCase):
 df5 = pd.merge(df1, df2, on='Domain', how='outer')
 df5 = df5.groupby('Domain').mean('Age').reset_index()
 df5['Age'] = df5['Age_x'].combine_first(df5['Age_y'])   # fills column with 1st column if nan fills with second column
-print(df5[['Domain','Age']])       # since domain is index it'll come
+# print(df5[['Domain','Age']])       # since domain is index it'll come
 
 ########## 4
+
+df6 = df3
+df6=df6[df6['Age']==df6['Age'].max()]           # .max() returns maximum value from column/columns
+print(df6['Age'].values[0], end=" is age of ")
+if 'NaN' not in df6['God'].values:              # .values gives direct values
+    print(df6['God'].values[0], " the God.")
+else:
+    print(df6['Goddess'].values[0], " the Goddess")
+    
+########## 5
+
+    
