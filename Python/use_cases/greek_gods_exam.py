@@ -50,4 +50,6 @@ else:
     
 ########## 5
 
-    
+df1['Age_group'] = df1['Age'].apply(lambda y : 'Young' if y<5000 else ('Middle-aged' if (y>=5000 and y<=8000) else 'Old')) # .apply() takes every element from series/ndarray and apply required functyion on all elemens one by one
+df2['Age_group'] = df2['Age'].apply(lambda y : 'Young' if y<5000 else ('Middle-aged' if (y>=5000 and y<=8000) else 'Old')) 
+print(df1, df2, sep='\n')
