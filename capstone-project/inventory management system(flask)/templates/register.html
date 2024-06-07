@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div id="message" class="message" style="display: none;">{{ message }}</div>
+        <form class="form" id="registerForm" action="{{ url_for('add_user') }}" method="post">
+            <p class="form-title">Create an account</p>
+            <div class="input-container">
+                <input type="email" id="email" name="email" placeholder="Enter email" required>
+            </div>
+            <div class="input-container">
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <input type="submit" value="Register" class="submit">
+        </form>
+        <p class="signup-link">
+            Already have an account? <a href="{{ url_for('index') }}">Log In here</a>
+        </p>
+    </div>
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            var email = document.getElementById('email').value;
+            var messageDiv = document.getElementById('message');
+
+            // Client-side email validation
+            if (!email.endsWith('@nucleusteq.com')) {
+                event.preventDefault(); // Prevent form submission
+                messageDiv.innerText = 'Invalid email. Please use your nucleusteq.com email address.';
+                messageDiv.style.display = 'flex';
+                setTimeout(function() {
+                    messageDiv.style.display = 'none';
+                }, 5000);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,2127 @@
+2024-06-07 00:16:26,895 [WARNING] app.main Login page has arrived
+2024-06-07 00:16:34,057 [INFO] app.main User admin logged in
+2024-06-07 00:16:34,090 [INFO] app.main admin accessed the dashboard
+2024-06-07 00:16:34,099 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 00:16:36,959 [ERROR] app Exception on /api/items [GET]
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 133, in get_items
+    return jsonify({"success": True, "items": items_list}), 200
+           ^^^^^^^
+NameError: name 'jsonify' is not defined
+2024-06-07 04:57:32,340 [WARNING] app.main Login page has arrived
+2024-06-07 04:57:44,169 [INFO] app.main User admin logged in
+2024-06-07 04:57:44,260 [INFO] app.main admin accessed the dashboard
+2024-06-07 04:57:44,280 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 04:57:50,240 [ERROR] app Exception on /api/items [GET]
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 133, in get_items
+    return jsonify({"success": True, "items": items_list}), 200
+           ^^^^^^^
+NameError: name 'jsonify' is not defined
+2024-06-07 04:58:19,001 [ERROR] app Exception on /item/add [POST]
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\auth.py", line 13, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 8, in add_item
+    data = request.get_json()
+           ^^^^^^^
+NameError: name 'request' is not defined
+2024-06-07 04:58:21,637 [ERROR] app Exception on /item/add [POST]
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\auth.py", line 13, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 8, in add_item
+    data = request.get_json()
+           ^^^^^^^
+NameError: name 'request' is not defined
+2024-06-07 04:58:23,522 [ERROR] app Exception on /item/add [POST]
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\auth.py", line 13, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 8, in add_item
+    data = request.get_json()
+           ^^^^^^^
+NameError: name 'request' is not defined
+2024-06-07 04:58:25,730 [ERROR] app Exception on /item/add [POST]
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\auth.py", line 13, in decorated_function
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 8, in add_item
+    data = request.get_json()
+           ^^^^^^^
+NameError: name 'request' is not defined
+2024-06-07 05:04:41,522 [WARNING] app.main Login page has arrived
+2024-06-07 05:04:50,833 [INFO] app.main User admin logged in
+2024-06-07 05:04:50,876 [INFO] app.main admin accessed the dashboard
+2024-06-07 05:04:50,917 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 05:04:55,311 [INFO] app.main Fetched employee and item list
+2024-06-07 05:06:03,458 [INFO] app.auth Item 123 added by admin admin
+2024-06-07 05:06:06,672 [INFO] app.main Fetched employee and item list
+2024-06-07 05:06:47,012 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 05:07:17,851 [INFO] app.main User gautam added by admin admin
+2024-06-07 05:07:20,359 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 05:07:25,387 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 05:07:51,152 [ERROR] app.auth Exception (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '456', 'null', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) occurred while updating item 1
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 42, in update_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '456', 'null', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-07 05:11:50,002 [ERROR] app.auth Exception (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '456', 'null', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) occurred while updating item 1
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 42, in update_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '456', 'null', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-07 05:12:15,344 [ERROR] app.auth Exception (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '4567', 'null', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) occurred while updating item 1
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 42, in update_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '4567', 'null', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-07 05:12:24,735 [ERROR] app.auth Exception (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '4567', 'None', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) occurred while updating item 1
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 42, in update_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '4567', 'None', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-07 05:18:30,040 [ERROR] app.auth Exception (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '456', 'null', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) occurred while updating item 1
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 42, in update_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '456', 'null', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-07 05:18:53,383 [ERROR] app.auth Exception (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '456', 'null', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) occurred while updating item 1
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 42, in update_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `user` (`username`))')
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('123', '456', 'null', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-07 05:19:17,579 [INFO] app.auth Item 1 updated by admin admin
+2024-06-07 05:19:24,742 [INFO] app.auth Item 1 updated by admin admin
+2024-06-07 05:22:20,109 [INFO] app.main User admin logged out
+2024-06-07 05:22:20,155 [WARNING] app.main Login page has arrived
+2024-06-07 05:22:28,577 [INFO] app.main User admin logged in
+2024-06-07 05:22:28,616 [INFO] app.main admin accessed the dashboard
+2024-06-07 05:22:28,655 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 05:35:15,566 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 05:35:15,573 [INFO] app.main User newuser added by admin
+2024-06-07 05:35:15,591 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 05:35:15,591 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 05:35:15,612 [WARNING] app.main User testuser not found
+2024-06-07 05:35:15,616 [INFO] app.main testuser accessed the dashboard
+2024-06-07 05:35:15,640 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 05:35:15,648 [INFO] app.main Fetched employee and item list
+2024-06-07 05:35:15,650 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 05:35:15,689 [WARNING] app.main Login page has arrived
+2024-06-07 05:35:15,699 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 05:35:15,716 [INFO] app.main User testuser logged in for the first time
+2024-06-07 05:35:15,723 [INFO] app.main User testuser logged out
+2024-06-07 12:29:16,262 [WARNING] app.main Login page has arrived
+2024-06-07 12:29:24,284 [INFO] app.main User admin logged in for the first time
+2024-06-07 12:29:26,205 [INFO] app.main admin accessed the dashboard
+2024-06-07 12:29:26,233 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 12:35:13,740 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 12:35:13,740 [INFO] app.main User newuser added by admin
+2024-06-07 12:35:13,779 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:35:13,782 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:35:13,803 [WARNING] app.main User testuser not found
+2024-06-07 12:35:13,803 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:35:13,844 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 12:35:13,853 [INFO] app.main Fetched employee and item list
+2024-06-07 12:35:13,858 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:35:13,896 [WARNING] app.main Login page has arrived
+2024-06-07 12:35:13,910 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:35:13,930 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:35:13,938 [INFO] app.main User testuser logged out
+2024-06-07 12:35:23,394 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 12:35:23,412 [INFO] app.main User newuser added by admin
+2024-06-07 12:35:23,438 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:35:23,444 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:35:23,461 [WARNING] app.main User testuser not found
+2024-06-07 12:35:23,472 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:35:23,496 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 12:35:23,505 [INFO] app.main Fetched employee and item list
+2024-06-07 12:35:23,515 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:35:23,549 [WARNING] app.main Login page has arrived
+2024-06-07 12:35:23,561 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:35:23,582 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:35:23,593 [INFO] app.main User testuser logged out
+2024-06-07 12:36:39,853 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 12:36:39,863 [INFO] app.main User newuser added by admin
+2024-06-07 12:36:39,880 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:36:39,885 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:36:39,910 [WARNING] app.main User testuser not found
+2024-06-07 12:36:39,913 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:36:39,948 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 12:36:39,958 [INFO] app.main Fetched employee and item list
+2024-06-07 12:36:39,958 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:36:40,003 [WARNING] app.main Login page has arrived
+2024-06-07 12:36:40,016 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:36:40,051 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:36:40,064 [INFO] app.main User testuser logged out
+2024-06-07 12:37:39,486 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 12:37:39,492 [INFO] app.main User newuser added by admin
+2024-06-07 12:37:39,512 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:37:39,512 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:37:39,534 [WARNING] app.main User testuser not found
+2024-06-07 12:37:39,539 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:37:39,565 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 12:37:39,604 [INFO] app.main Fetched employee and item list
+2024-06-07 12:37:39,606 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:37:39,644 [WARNING] app.main Login page has arrived
+2024-06-07 12:37:39,655 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:37:39,677 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:37:39,687 [INFO] app.main User testuser logged out
+2024-06-07 12:42:09,310 [ERROR] app.auth Exception (MySQLdb.OperationalError) (1054, "Unknown column 'warranty' in 'field list'")
+[SQL: INSERT INTO items (item_name, serial_number, bill_no, date_of_purchase, assigned_to, warranty) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('item1', 12345, 67890, '2024-01-01', None, '2025-01-01')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) occurred while adding item 12345
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'warranty' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\g_and\Desktop\inventory management system\app\items.py", line 21, in add_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (MySQLdb.OperationalError) (1054, "Unknown column 'warranty' in 'field list'")
+[SQL: INSERT INTO items (item_name, serial_number, bill_no, date_of_purchase, assigned_to, warranty) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('item1', 12345, 67890, '2024-01-01', None, '2025-01-01')]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-07 12:42:09,361 [INFO] app.main User newuser added by admin
+2024-06-07 12:42:09,377 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:42:09,383 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:42:09,396 [WARNING] app.main User testuser not found
+2024-06-07 12:42:09,404 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:42:09,425 [ERROR] app.main Exception (MySQLdb.OperationalError) (1054, "Unknown column 'items.warranty' in 'field list'")
+[SQL: SELECT items.item_id AS items_item_id, items.item_name AS items_item_name, items.serial_number AS items_serial_number, items.bill_no AS items_bill_no, items.date_of_purchase AS items_date_of_purchase, items.assigned_to AS items_assigned_to, items.warranty AS items_warranty 
+FROM items 
+WHERE %s = items.assigned_to]
+[parameters: ('deluser',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) occurred while deleting user deluser
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'items.warranty' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\g_and\Desktop\inventory management system\app\main.py", line 195, in del_user
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 442, in execute
+    postsort_actions = self._generate_actions()
+                       ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 400, in _generate_actions
+    if action.execute(self):
+       ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 532, in execute
+    self.dependency_processor.presort_deletes(uow, delete_states)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\dependency.py", line 450, in presort_deletes
+    history = uowcommit.get_attribute_history(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 283, in get_attribute_history
+    history = impl.get_history(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1679, in get_history
+    current = self.get(state, dict_, passive=passive)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1086, in get
+    value = self._fire_loader_callables(state, key, passive)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\attributes.py", line 1121, in _fire_loader_callables
+    return self.callable_(state, passive)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\strategies.py", line 967, in _load_for_state
+    return self._emit_lazyload(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\strategies.py", line 1130, in _emit_lazyload
+    result = session.execute(
+             ^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2236, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (MySQLdb.OperationalError) (1054, "Unknown column 'items.warranty' in 'field list'")
+[SQL: SELECT items.item_id AS items_item_id, items.item_name AS items_item_name, items.serial_number AS items_serial_number, items.bill_no AS items_bill_no, items.date_of_purchase AS items_date_of_purchase, items.assigned_to AS items_assigned_to, items.warranty AS items_warranty 
+FROM items 
+WHERE %s = items.assigned_to]
+[parameters: ('deluser',)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-07 12:42:09,552 [INFO] app.main Fetched employee and item list
+2024-06-07 12:42:09,557 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:42:09,597 [ERROR] app.auth Exception (MySQLdb.OperationalError) (1054, "Unknown column 'items.warranty' in 'field list'")
+[SQL: SELECT items.item_id AS items_item_id, items.item_name AS items_item_name, items.serial_number AS items_serial_number, items.bill_no AS items_bill_no, items.date_of_purchase AS items_date_of_purchase, items.assigned_to AS items_assigned_to, items.warranty AS items_warranty 
+FROM items 
+WHERE items.assigned_to IS NULL]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) occurred while fetching unassigned items
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1054, "Unknown column 'items.warranty' in 'field list'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\g_and\Desktop\inventory management system\app\items.py", line 92, in get_unassigned_items
+    items = Item.query.filter_by(assigned_to=None).all()
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\query.py", line 2673, in all
+    return self._iter().all()  # type: ignore
+           ^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2236, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (MySQLdb.OperationalError) (1054, "Unknown column 'items.warranty' in 'field list'")
+[SQL: SELECT items.item_id AS items_item_id, items.item_name AS items_item_name, items.serial_number AS items_serial_number, items.bill_no AS items_bill_no, items.date_of_purchase AS items_date_of_purchase, items.assigned_to AS items_assigned_to, items.warranty AS items_warranty 
+FROM items 
+WHERE items.assigned_to IS NULL]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-07 12:42:09,622 [WARNING] app.main Login page has arrived
+2024-06-07 12:42:09,638 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:42:09,724 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:42:09,730 [INFO] app.main User testuser logged out
+2024-06-07 12:43:06,769 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 12:43:06,774 [INFO] app.main User newuser added by admin
+2024-06-07 12:43:06,799 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:43:06,799 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:43:06,822 [WARNING] app.main User testuser not found
+2024-06-07 12:43:06,828 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:43:06,858 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 12:43:06,896 [INFO] app.main Fetched employee and item list
+2024-06-07 12:43:06,896 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:43:06,944 [WARNING] app.main Login page has arrived
+2024-06-07 12:43:06,969 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:43:06,991 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:43:07,000 [INFO] app.main User testuser logged out
+2024-06-07 12:44:04,534 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 12:44:04,534 [INFO] app.main User newuser added by admin
+2024-06-07 12:44:04,575 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:44:04,575 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:44:04,598 [WARNING] app.main User testuser not found
+2024-06-07 12:44:04,604 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:44:04,635 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 12:44:04,670 [INFO] app.main Fetched employee and item list
+2024-06-07 12:44:04,675 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:44:04,716 [WARNING] app.main Login page has arrived
+2024-06-07 12:44:04,730 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:44:04,759 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:44:04,763 [INFO] app.main User testuser logged out
+2024-06-07 12:47:04,757 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 12:47:04,763 [INFO] app.main User newuser added by admin
+2024-06-07 12:47:04,793 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:47:04,802 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:47:04,824 [WARNING] app.main User testuser not found
+2024-06-07 12:47:04,824 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:47:04,857 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 12:47:04,894 [INFO] app.main Fetched employee and item list
+2024-06-07 12:47:04,901 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:47:04,949 [WARNING] app.main Login page has arrived
+2024-06-07 12:47:04,978 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:47:04,993 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:47:05,009 [INFO] app.main User testuser logged out
+2024-06-07 12:47:18,822 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 12:47:18,831 [INFO] app.main User newuser added by admin
+2024-06-07 12:47:18,849 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:47:18,852 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:47:18,873 [WARNING] app.main User testuser not found
+2024-06-07 12:47:18,880 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:47:18,911 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 12:47:18,933 [INFO] app.main Fetched employee and item list
+2024-06-07 12:47:18,943 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:47:18,983 [WARNING] app.main Login page has arrived
+2024-06-07 12:47:19,005 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:47:19,027 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:47:19,034 [INFO] app.main User testuser logged out
+2024-06-07 12:48:22,524 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 12:48:22,538 [INFO] app.main User newuser added by admin
+2024-06-07 12:48:22,556 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:48:22,556 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:48:22,586 [WARNING] app.main User testuser not found
+2024-06-07 12:48:22,586 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:48:22,619 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 12:48:22,644 [INFO] app.main Fetched employee and item list
+2024-06-07 12:48:22,652 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:48:22,702 [WARNING] app.main Login page has arrived
+2024-06-07 12:48:22,724 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:48:22,751 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:48:22,759 [INFO] app.main User testuser logged out
+2024-06-07 12:50:43,886 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 12:50:43,895 [INFO] app.main User newuser added by admin
+2024-06-07 12:50:43,915 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 12:50:43,918 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 12:50:43,939 [WARNING] app.main User testuser not found
+2024-06-07 12:50:43,942 [INFO] app.main testuser accessed the dashboard
+2024-06-07 12:50:43,973 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 12:50:44,012 [INFO] app.main Fetched employee and item list
+2024-06-07 12:50:44,016 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 12:50:44,054 [WARNING] app.main Login page has arrived
+2024-06-07 12:50:44,075 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 12:50:44,098 [INFO] app.main User testuser logged in for the first time
+2024-06-07 12:50:44,105 [INFO] app.main User testuser logged out
+2024-06-07 13:15:53,099 [INFO] app.main Admin None accessed admin dashboard
+2024-06-07 13:15:53,146 [INFO] app.main None accessed the dashboard
+2024-06-07 13:15:53,150 [WARNING] app.main Login page has arrived
+2024-06-07 13:15:53,162 [WARNING] app.main Failed login attempt for username: admin
+2024-06-07 13:15:53,167 [WARNING] app.main Failed login attempt for username: admin
+2024-06-07 13:15:53,175 [INFO] app.main User None logged out
+2024-06-07 13:19:51,395 [INFO] app.auth Item 12345 added by admin admin
+2024-06-07 13:19:51,395 [INFO] app.main User newuser added by admin
+2024-06-07 13:19:51,428 [INFO] app.main User newadminuser added by admin admin
+2024-06-07 13:19:51,435 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:19:51,457 [WARNING] app.main User testuser not found
+2024-06-07 13:19:51,461 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:19:51,490 [INFO] app.main User deluser deleted by admin admin
+2024-06-07 13:19:51,530 [INFO] app.main Fetched employee and item list
+2024-06-07 13:19:51,540 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:19:51,591 [WARNING] app.main Login page has arrived
+2024-06-07 13:19:51,686 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:19:51,704 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:19:51,713 [INFO] app.main User testuser logged out
+2024-06-07 13:21:20,955 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:21:21,133 [INFO] app.main User newuser added by admins
+2024-06-07 13:21:21,328 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:21:21,626 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:21:21,966 [WARNING] app.main User testuser not found
+2024-06-07 13:21:22,174 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:21:22,364 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:21:22,743 [INFO] app.main Fetched employee and item list
+2024-06-07 13:21:22,906 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:21:23,837 [WARNING] app.main Login page has arrived
+2024-06-07 13:21:24,143 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:21:24,301 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:21:24,462 [INFO] app.main User testuser logged out
+2024-06-07 13:26:59,684 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:26:59,908 [INFO] app.main User newuser added by admins
+2024-06-07 13:27:00,096 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:27:00,261 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:27:00,583 [WARNING] app.main User testuser not found
+2024-06-07 13:27:00,745 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:27:00,931 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:27:01,087 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:27:01,820 [WARNING] app.main Login page has arrived
+2024-06-07 13:27:01,968 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:27:02,133 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:27:02,283 [INFO] app.main User testuser logged out
+2024-06-07 13:28:23,543 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:28:23,719 [INFO] app.main User newuser added by admins
+2024-06-07 13:28:23,919 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:28:24,080 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:28:24,578 [WARNING] app.main User testuser not found
+2024-06-07 13:28:24,755 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:28:24,939 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:28:25,116 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:28:25,892 [WARNING] app.main Login page has arrived
+2024-06-07 13:28:26,042 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:28:26,246 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:28:26,397 [INFO] app.main User testuser logged out
+2024-06-07 13:30:02,747 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:30:02,910 [INFO] app.main User newuser added by admins
+2024-06-07 13:30:03,196 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:30:03,356 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:30:03,693 [WARNING] app.main User testuser not found
+2024-06-07 13:30:03,870 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:30:04,043 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:30:04,205 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:30:04,357 [INFO] app.main Fetched employee and item list
+2024-06-07 13:30:04,516 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:30:05,433 [WARNING] app.main Login page has arrived
+2024-06-07 13:30:05,759 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:30:05,908 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:30:06,065 [INFO] app.main User testuser logged out
+2024-06-07 13:30:06,366 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:31:11,272 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:31:11,532 [INFO] app.main User newuser added by admins
+2024-06-07 13:31:11,711 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:31:11,883 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:31:12,182 [WARNING] app.main User testuser not found
+2024-06-07 13:31:12,323 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:31:12,503 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:31:12,660 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:31:12,808 [INFO] app.main Fetched employee and item list
+2024-06-07 13:31:12,960 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:31:13,880 [WARNING] app.main Login page has arrived
+2024-06-07 13:31:14,049 [ERROR] app.auth Exception (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `users` (`username`))')
+[SQL: UPDATE items SET assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('testuser', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) occurred while assigning item 1
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `users` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 81, in item_assignment
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `users` (`username`))')
+[SQL: UPDATE items SET assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('testuser', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-07 13:31:14,219 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:31:14,387 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:31:14,535 [INFO] app.main User testuser logged out
+2024-06-07 13:31:14,846 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:31:30,243 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:31:30,429 [INFO] app.main User newuser added by admins
+2024-06-07 13:31:30,729 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:31:30,908 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:31:31,219 [WARNING] app.main User testuser not found
+2024-06-07 13:31:31,356 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:31:31,523 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:31:31,681 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:31:31,830 [INFO] app.main Fetched employee and item list
+2024-06-07 13:31:31,977 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:31:32,860 [WARNING] app.main Login page has arrived
+2024-06-07 13:31:33,040 [ERROR] app.auth Exception (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `users` (`username`))')
+[SQL: UPDATE items SET assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('testuser', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) occurred while assigning item 1
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `users` (`username`))')
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\items.py", line 81, in item_assignment
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1452, 'Cannot add or update a child row: a foreign key constraint fails (`world`.`items`, CONSTRAINT `items_ibfk_1` FOREIGN KEY (`assigned_to`) REFERENCES `users` (`username`))')
+[SQL: UPDATE items SET assigned_to=%s WHERE items.item_id = %s]
+[parameters: ('testuser', 1)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-07 13:31:33,205 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:31:33,357 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:31:33,519 [INFO] app.main User testuser logged out
+2024-06-07 13:31:33,827 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:34:54,426 [WARNING] app.main Login page has arrived
+2024-06-07 13:34:59,487 [ERROR] app.main Exception (MySQLdb.ProgrammingError) (1146, "Table 'world.users' doesn't exist")
+[SQL: SELECT users.username AS users_username, users.password AS users_password, users.email AS users_email, users.is_admin AS users_is_admin, users.first_login AS users_first_login 
+FROM users 
+WHERE users.username = %s AND users.password = %s 
+ LIMIT %s]
+[parameters: ('admin', 'admin', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405) occurred during login for username: admin
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'world.users' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 75, in login
+    user = User.query.filter_by(username=username, password=password).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\query.py", line 2728, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2236, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.ProgrammingError: (MySQLdb.ProgrammingError) (1146, "Table 'world.users' doesn't exist")
+[SQL: SELECT users.username AS users_username, users.password AS users_password, users.email AS users_email, users.is_admin AS users_is_admin, users.first_login AS users_first_login 
+FROM users 
+WHERE users.username = %s AND users.password = %s 
+ LIMIT %s]
+[parameters: ('admin', 'admin', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-07 13:35:03,763 [ERROR] app.main Exception (MySQLdb.ProgrammingError) (1146, "Table 'world.users' doesn't exist")
+[SQL: SELECT users.username AS users_username, users.password AS users_password, users.email AS users_email, users.is_admin AS users_is_admin, users.first_login AS users_first_login 
+FROM users 
+WHERE users.username = %s AND users.password = %s 
+ LIMIT %s]
+[parameters: ('admin', 'admin', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405) occurred during login for username: admin
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'world.users' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 75, in login
+    user = User.query.filter_by(username=username, password=password).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\query.py", line 2728, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2236, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.ProgrammingError: (MySQLdb.ProgrammingError) (1146, "Table 'world.users' doesn't exist")
+[SQL: SELECT users.username AS users_username, users.password AS users_password, users.email AS users_email, users.is_admin AS users_is_admin, users.first_login AS users_first_login 
+FROM users 
+WHERE users.username = %s AND users.password = %s 
+ LIMIT %s]
+[parameters: ('admin', 'admin', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-07 13:35:05,304 [ERROR] app.main Exception (MySQLdb.ProgrammingError) (1146, "Table 'world.users' doesn't exist")
+[SQL: SELECT users.username AS users_username, users.password AS users_password, users.email AS users_email, users.is_admin AS users_is_admin, users.first_login AS users_first_login 
+FROM users 
+WHERE users.username = %s AND users.password = %s 
+ LIMIT %s]
+[parameters: ('admin', 'admin', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405) occurred during login for username: admin
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'world.users' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 75, in login
+    user = User.query.filter_by(username=username, password=password).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\query.py", line 2728, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2236, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.ProgrammingError: (MySQLdb.ProgrammingError) (1146, "Table 'world.users' doesn't exist")
+[SQL: SELECT users.username AS users_username, users.password AS users_password, users.email AS users_email, users.is_admin AS users_is_admin, users.first_login AS users_first_login 
+FROM users 
+WHERE users.username = %s AND users.password = %s 
+ LIMIT %s]
+[parameters: ('admin', 'admin', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-07 13:35:27,452 [INFO] app.main User admin logged in for the first time
+2024-06-07 13:35:29,022 [INFO] app.main admin accessed the dashboard
+2024-06-07 13:35:29,051 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 13:36:03,439 [INFO] app.main User popoy added by admin admin
+2024-06-07 13:36:06,547 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 13:36:22,363 [INFO] app.auth Item 123 added by admin admin
+2024-06-07 13:36:25,745 [INFO] app.main Fetched employee and item list
+2024-06-07 13:36:30,196 [INFO] app.auth Item 1 assigned to popoy by admin admin
+2024-06-07 13:36:30,214 [INFO] app.main Fetched employee and item list
+2024-06-07 13:40:02,070 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:40:02,259 [INFO] app.main User newuser added by admins
+2024-06-07 13:40:02,459 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:40:02,637 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:40:03,117 [WARNING] app.main User testuser not found
+2024-06-07 13:40:03,304 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:40:03,497 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:40:03,661 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:40:03,810 [INFO] app.main Fetched employee and item list
+2024-06-07 13:40:03,958 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:40:04,798 [WARNING] app.main Login page has arrived
+2024-06-07 13:40:04,963 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 13:40:05,101 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:40:05,267 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:40:05,418 [INFO] app.main User testuser logged out
+2024-06-07 13:40:05,713 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:44:42,474 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:44:42,655 [INFO] app.main User newuser added by admins
+2024-06-07 13:44:42,829 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:44:43,089 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:44:43,520 [WARNING] app.main User testuser not found
+2024-06-07 13:44:43,697 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:44:43,985 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:44:44,190 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:44:44,352 [INFO] app.main Fetched employee and item list
+2024-06-07 13:44:44,504 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:44:45,366 [WARNING] app.main Login page has arrived
+2024-06-07 13:44:45,536 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 13:44:45,680 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:44:45,833 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:44:45,973 [INFO] app.main User testuser logged out
+2024-06-07 13:44:46,260 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:45:13,017 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:45:13,311 [INFO] app.main User newuser added by admins
+2024-06-07 13:45:13,477 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:45:13,658 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:45:14,035 [WARNING] app.main User testuser not found
+2024-06-07 13:45:14,216 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:45:14,397 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:45:14,560 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:45:14,708 [INFO] app.main Fetched employee and item list
+2024-06-07 13:45:14,848 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:45:15,737 [WARNING] app.main Login page has arrived
+2024-06-07 13:45:15,899 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 13:45:16,066 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:45:16,240 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:45:16,393 [INFO] app.main User testuser logged out
+2024-06-07 13:45:16,693 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:46:28,715 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:46:28,902 [INFO] app.main User newuser added by admins
+2024-06-07 13:46:29,073 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:46:29,246 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:46:29,623 [WARNING] app.main User testuser not found
+2024-06-07 13:46:29,807 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:46:30,005 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:46:30,178 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:46:30,321 [INFO] app.main Fetched employee and item list
+2024-06-07 13:46:30,465 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:46:31,333 [WARNING] app.main Login page has arrived
+2024-06-07 13:46:31,513 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 13:46:31,728 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:46:31,883 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:46:32,029 [INFO] app.main User testuser logged out
+2024-06-07 13:46:32,349 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:47:59,792 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:47:59,962 [INFO] app.main User newuser added by admins
+2024-06-07 13:48:00,205 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:48:00,459 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:48:00,845 [INFO] app.main Password changed for user: testuser
+2024-06-07 13:48:01,033 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:48:01,222 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:48:01,396 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:48:01,542 [INFO] app.main Fetched employee and item list
+2024-06-07 13:48:01,690 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:48:02,649 [WARNING] app.main Login page has arrived
+2024-06-07 13:48:02,817 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 13:48:02,963 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:48:03,177 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:48:03,323 [INFO] app.main User testuser logged out
+2024-06-07 13:48:03,608 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:49:35,383 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:49:35,549 [INFO] app.main User newuser added by admins
+2024-06-07 13:49:35,730 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:49:36,015 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:49:36,417 [INFO] app.main Password changed for user: testuser
+2024-06-07 13:49:36,581 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:49:36,779 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:49:36,935 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:49:37,082 [INFO] app.main Fetched employee and item list
+2024-06-07 13:49:37,253 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:49:38,147 [WARNING] app.main Login page has arrived
+2024-06-07 13:49:38,313 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 13:49:38,456 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:49:38,611 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:49:38,761 [INFO] app.main User testuser logged out
+2024-06-07 13:49:39,063 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:51:54,156 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:51:54,326 [INFO] app.main User newuser added by admins
+2024-06-07 13:51:54,511 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:51:54,743 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:51:55,170 [INFO] app.main Password changed for user: testuser
+2024-06-07 13:51:55,321 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:51:55,471 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:51:55,620 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:51:55,794 [INFO] app.main Fetched employee and item list
+2024-06-07 13:51:55,937 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:51:56,856 [WARNING] app.main Login page has arrived
+2024-06-07 13:51:57,015 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 13:51:57,171 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:51:57,334 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:51:57,502 [INFO] app.main User testuser logged out
+2024-06-07 13:51:57,820 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:52:52,416 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:52:52,594 [INFO] app.main User newuser added by admins
+2024-06-07 13:52:52,770 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:52:52,938 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:52:53,458 [INFO] app.main Password changed for user: testuser
+2024-06-07 13:52:53,614 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:52:53,770 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:52:53,933 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:52:54,085 [INFO] app.main Fetched employee and item list
+2024-06-07 13:52:54,230 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:52:55,108 [WARNING] app.main Login page has arrived
+2024-06-07 13:52:55,273 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 13:52:55,416 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:52:55,577 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:52:55,724 [INFO] app.main User testuser logged out
+2024-06-07 13:52:56,033 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:53:32,414 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:53:32,584 [INFO] app.main User newuser added by admins
+2024-06-07 13:53:32,761 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:53:32,930 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:53:33,299 [INFO] app.main Password changed for user: testuser
+2024-06-07 13:53:33,460 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:53:33,639 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:53:33,792 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:53:33,930 [INFO] app.main Fetched employee and item list
+2024-06-07 13:53:34,091 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:53:34,959 [WARNING] app.main Login page has arrived
+2024-06-07 13:53:35,126 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 13:53:35,287 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:53:35,466 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:53:35,624 [INFO] app.main User testuser logged out
+2024-06-07 13:53:35,947 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 13:53:52,308 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 13:53:52,538 [INFO] app.main User newuser added by admins
+2024-06-07 13:53:52,720 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 13:53:52,888 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 13:53:53,241 [INFO] app.main Password changed for user: testuser
+2024-06-07 13:53:53,427 [INFO] app.main testuser accessed the dashboard
+2024-06-07 13:53:53,585 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 13:53:53,741 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 13:53:53,880 [INFO] app.main Fetched employee and item list
+2024-06-07 13:53:54,033 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 13:53:54,974 [WARNING] app.main Login page has arrived
+2024-06-07 13:53:55,141 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 13:53:55,286 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 13:53:55,470 [INFO] app.main User testuser logged in for the first time
+2024-06-07 13:53:55,615 [INFO] app.main User testuser logged out
+2024-06-07 13:53:55,932 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 15:45:41,261 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 15:45:41,388 [INFO] app.main User newuser added by admins
+2024-06-07 15:45:41,516 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 15:45:41,636 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 15:45:41,915 [INFO] app.main Password changed for user: testuser
+2024-06-07 15:45:42,064 [INFO] app.main testuser accessed the dashboard
+2024-06-07 15:45:42,307 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 15:45:42,455 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 15:45:42,581 [INFO] app.main Fetched employee and item list
+2024-06-07 15:45:42,700 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 15:45:43,459 [WARNING] app.main Login page has arrived
+2024-06-07 15:45:43,598 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 15:45:43,716 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 15:45:43,851 [INFO] app.main User testuser logged in for the first time
+2024-06-07 15:45:43,970 [INFO] app.main User testuser logged out
+2024-06-07 15:45:44,228 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 15:46:50,301 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 15:46:50,506 [INFO] app.main User newuser added by admins
+2024-06-07 15:46:50,646 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 15:46:50,752 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 15:46:51,082 [INFO] app.main Password changed for user: testuser
+2024-06-07 15:46:51,220 [INFO] app.main testuser accessed the dashboard
+2024-06-07 15:46:51,357 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 15:46:51,503 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 15:46:51,627 [INFO] app.main Fetched employee and item list
+2024-06-07 15:46:51,753 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 15:46:52,505 [WARNING] app.main Login page has arrived
+2024-06-07 15:46:52,659 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 15:46:52,784 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 15:46:52,918 [INFO] app.main User testuser logged in for the first time
+2024-06-07 15:46:53,045 [INFO] app.main User testuser logged out
+2024-06-07 15:46:53,293 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 15:47:20,029 [INFO] app.auth Item 12345 added by admin admins
+2024-06-07 15:47:20,160 [INFO] app.main User newuser added by admins
+2024-06-07 15:47:20,304 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 15:47:20,431 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 15:47:20,857 [INFO] app.main Password changed for user: testuser
+2024-06-07 15:47:20,973 [INFO] app.main testuser accessed the dashboard
+2024-06-07 15:47:21,123 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 15:47:21,261 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 15:47:21,407 [INFO] app.main Fetched employee and item list
+2024-06-07 15:47:21,580 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 15:47:22,366 [WARNING] app.main Login page has arrived
+2024-06-07 15:47:22,542 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 15:47:22,678 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 15:47:22,816 [INFO] app.main User testuser logged in for the first time
+2024-06-07 15:47:22,951 [INFO] app.main User testuser logged out
+2024-06-07 15:47:23,237 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 15:55:11,779 [INFO] app.main User admin logged out
+2024-06-07 15:55:11,806 [WARNING] app.main Login page has arrived
+2024-06-07 15:55:18,700 [INFO] app.main User admin logged in for the first time
+2024-06-07 15:55:19,916 [INFO] app.main admin accessed the dashboard
+2024-06-07 15:55:19,927 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 15:55:23,700 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 15:55:38,466 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:00:23,843 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:00:29,328 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:00:34,810 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:00:40,192 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:05:40,057 [WARNING] app.main Login page has arrived
+2024-06-07 16:05:44,367 [INFO] app.main User admin logged in
+2024-06-07 16:05:44,404 [INFO] app.main admin accessed the dashboard
+2024-06-07 16:05:44,418 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:05:57,413 [INFO] app.auth Item 3 deleted by admin admin
+2024-06-07 16:06:23,087 [INFO] app.main Fetched employee and item list
+2024-06-07 16:06:34,542 [INFO] app.auth Item 4 assigned to user2 by admin admin
+2024-06-07 16:06:34,554 [INFO] app.main Fetched employee and item list
+2024-06-07 16:06:47,510 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:08:17,981 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:10:08,185 [INFO] app.main User admin logged out
+2024-06-07 16:10:08,227 [WARNING] app.main Login page has arrived
+2024-06-07 16:10:12,453 [WARNING] app.auth Unauthorized access attempt for admin by None
+2024-06-07 16:10:16,642 [INFO] app.main User admin logged in
+2024-06-07 16:10:16,677 [INFO] app.main admin accessed the dashboard
+2024-06-07 16:10:16,696 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:13:53,797 [INFO] app.main User user3 added by admin admin
+2024-06-07 16:15:31,883 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:15:41,669 [INFO] app.main Fetched employee and item list
+2024-06-07 16:15:46,756 [INFO] app.main User admin logged out
+2024-06-07 16:15:46,805 [WARNING] app.main Login page has arrived
+2024-06-07 16:16:03,659 [ERROR] app.main Exception invalid literal for int() with base 10: 'False' occurred during login for username: user2
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 58, in login
+    session['is_admin'] =  is_admin(user.is_admin)
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 228, in is_admin
+    if int(db_object) == 0:
+       ^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'False'
+2024-06-07 16:16:12,087 [ERROR] app.main Exception invalid literal for int() with base 10: 'False' occurred during login for username: user2
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 58, in login
+    session['is_admin'] =  is_admin(user.is_admin)
+                           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 228, in is_admin
+    if int(db_object) == 0:
+       ^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'False'
+2024-06-07 16:16:27,436 [INFO] app.main User admin logged in
+2024-06-07 16:16:27,465 [INFO] app.main admin accessed the dashboard
+2024-06-07 16:16:27,476 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:16:29,835 [INFO] app.main User admin logged out
+2024-06-07 16:16:29,866 [WARNING] app.main Login page has arrived
+2024-06-07 16:16:58,407 [INFO] app.main User hello added by self
+2024-06-07 16:17:04,611 [WARNING] app.main Login page has arrived
+2024-06-07 16:17:10,687 [INFO] app.main User hello logged in for the first time
+2024-06-07 16:17:16,462 [INFO] app.main hello accessed the dashboard
+2024-06-07 16:17:16,479 [INFO] app.main Employee hello accessed employee dashboard
+2024-06-07 16:17:30,097 [INFO] app.main User hello accessed password change form
+2024-06-07 16:17:37,817 [INFO] app.main Password changed for user: hello
+2024-06-07 16:17:42,860 [INFO] app.main hello accessed the dashboard
+2024-06-07 16:17:42,873 [INFO] app.main Employee hello accessed employee dashboard
+2024-06-07 16:17:52,781 [INFO] app.main User hello logged out
+2024-06-07 16:17:52,822 [WARNING] app.main Login page has arrived
+2024-06-07 16:17:57,447 [INFO] app.main User admin logged in
+2024-06-07 16:17:57,476 [INFO] app.main admin accessed the dashboard
+2024-06-07 16:17:57,489 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:18:02,970 [INFO] app.auth Item 4 assigned to None by admin admin
+2024-06-07 16:18:03,764 [INFO] app.auth Item 2 assigned to None by admin admin
+2024-06-07 16:18:07,704 [INFO] app.main Fetched employee and item list
+2024-06-07 16:18:12,293 [INFO] app.auth Item 2 assigned to hello by admin admin
+2024-06-07 16:18:12,297 [INFO] app.auth Item 4 assigned to hello by admin admin
+2024-06-07 16:18:12,308 [INFO] app.main Fetched employee and item list
+2024-06-07 16:18:12,319 [INFO] app.main Fetched employee and item list
+2024-06-07 16:18:13,983 [INFO] app.main User admin logged out
+2024-06-07 16:18:14,063 [WARNING] app.main Login page has arrived
+2024-06-07 16:18:21,292 [INFO] app.main User hello logged in
+2024-06-07 16:18:21,321 [INFO] app.main hello accessed the dashboard
+2024-06-07 16:18:21,336 [INFO] app.main Employee hello accessed employee dashboard
+2024-06-07 16:21:11,029 [INFO] app.main User hello logged out
+2024-06-07 16:21:11,072 [WARNING] app.main Login page has arrived
+2024-06-07 16:24:33,072 [INFO] app.main User admin logged in
+2024-06-07 16:24:33,100 [INFO] app.main admin accessed the dashboard
+2024-06-07 16:24:33,113 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:29:44,166 [ERROR] app.auth Exception (MySQLdb.IntegrityError) (1062, "Duplicate entry '12345' for key 'items.serial_number'")
+[SQL: INSERT INTO items (item_name, serial_number, bill_no, date_of_purchase, assigned_to, warranty) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('item1', 12345, 67890, '2024-01-01', None, '2025-01-01')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) occurred while adding item 12345
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry '12345' for key 'items.serial_number'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\g_and\Desktop\inventory management system\app\items.py", line 21, in add_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2017, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1302, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 1277, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4341, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4476, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 4437, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1062, "Duplicate entry '12345' for key 'items.serial_number'")
+[SQL: INSERT INTO items (item_name, serial_number, bill_no, date_of_purchase, assigned_to, warranty) VALUES (%s, %s, %s, %s, %s, %s)]
+[parameters: ('item1', 12345, 67890, '2024-01-01', None, '2025-01-01')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-07 16:29:44,361 [INFO] app.main User newuser added by admins
+2024-06-07 16:29:44,571 [INFO] app.main User newadminuser added by admin admins
+2024-06-07 16:29:44,736 [INFO] app.main Admin admins accessed admin dashboard
+2024-06-07 16:29:45,044 [INFO] app.main Password changed for user: testuser
+2024-06-07 16:29:45,177 [INFO] app.main testuser accessed the dashboard
+2024-06-07 16:29:45,349 [INFO] app.main User deluser deleted by admin admins
+2024-06-07 16:29:45,514 [INFO] app.auth Item 1 deleted by admin admins
+2024-06-07 16:29:45,687 [INFO] app.main Fetched employee and item list
+2024-06-07 16:29:45,876 [INFO] app.main Employee testuser accessed employee dashboard
+2024-06-07 16:29:46,861 [WARNING] app.main Login page has arrived
+2024-06-07 16:29:47,088 [INFO] app.auth Item 1 assigned to testuser by admin admins
+2024-06-07 16:29:47,294 [WARNING] app.main Failed login attempt for username: wronguser
+2024-06-07 16:29:47,455 [INFO] app.main User testuser logged in for the first time
+2024-06-07 16:29:47,604 [INFO] app.main User testuser logged out
+2024-06-07 16:29:47,900 [INFO] app.auth Item 1 updated by admin admins
+2024-06-07 16:36:56,757 [INFO] app.main User admin logged out
+2024-06-07 16:36:56,789 [WARNING] app.main Login page has arrived
+2024-06-07 16:37:24,587 [ERROR] app.main Error adding user: (MySQLdb.ProgrammingError) (1146, "Table 'world.users' doesn't exist")
+[SQL: INSERT INTO users (username, password, email, is_admin, first_login) VALUES (%s, %s, %s, %s, %s)]
+[parameters: ('andaniji2', 'andaniji2', 'andaniji2@nucleusteq.com', False, True)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-07 16:37:24,588 [ERROR] app.main Exception occurred while adding user andaniji2
+NoneType: None
+2024-06-07 16:37:26,985 [WARNING] app.main Login page has arrived
+2024-06-07 16:37:35,596 [ERROR] app.main Exception (MySQLdb.ProgrammingError) (1146, "Table 'world.users' doesn't exist")
+[SQL: SELECT users.username AS users_username, users.password AS users_password, users.email AS users_email, users.is_admin AS users_is_admin, users.first_login AS users_first_login 
+FROM users 
+WHERE users.username = %s AND users.password = %s 
+ LIMIT %s]
+[parameters: ('andaniji2', 'andaniji2', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405) occurred during login for username: andaniji2
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+MySQLdb.ProgrammingError: (1146, "Table 'world.users' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 55, in login
+    user = User.query.filter_by(username=username, password=password).first()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\query.py", line 2728, in first
+    return self.limit(1)._iter().first()  # type: ignore
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\query.py", line 2827, in _iter
+    result: Union[ScalarResult[_T], Result[_T]] = self.session.execute(
+                                                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2351, in execute
+    return self._execute_internal(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\session.py", line 2236, in _execute_internal
+    result: Result[Any] = compile_state_cls.orm_execute_statement(
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\orm\context.py", line 293, in orm_execute_statement
+    result = conn.execute(
+             ^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1418, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\elements.py", line 515, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1640, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 2353, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py", line 924, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python312\Lib\site-packages\MySQLdb\connections.py", line 261, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.ProgrammingError: (MySQLdb.ProgrammingError) (1146, "Table 'world.users' doesn't exist")
+[SQL: SELECT users.username AS users_username, users.password AS users_password, users.email AS users_email, users.is_admin AS users_is_admin, users.first_login AS users_first_login 
+FROM users 
+WHERE users.username = %s AND users.password = %s 
+ LIMIT %s]
+[parameters: ('andaniji2', 'andaniji2', 1)]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2024-06-07 16:42:10,637 [INFO] app.main User hello added by self
+2024-06-07 16:42:14,219 [WARNING] app.main Login page has arrived
+2024-06-07 16:43:28,171 [INFO] app.main User admin logged in for the first time
+2024-06-07 16:43:33,805 [INFO] app.main admin accessed the dashboard
+2024-06-07 16:43:33,817 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:43:48,322 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:43:52,677 [INFO] app.main User admin accessed password change form
+2024-06-07 16:45:17,854 [INFO] app.main admin accessed the dashboard
+2024-06-07 16:45:17,868 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:45:31,693 [INFO] app.main Fetched employee and item list
+2024-06-07 16:46:06,595 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:46:11,702 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-07 16:46:15,187 [INFO] app.main User admin logged out
+2024-06-07 16:46:15,223 [WARNING] app.main Login page has arrived
+2024-06-07 16:46:20,209 [INFO] app.main User hello logged in for the first time
+2024-06-07 16:46:21,205 [INFO] app.main hello accessed the dashboard
+2024-06-07 16:46:21,223 [INFO] app.main Employee hello accessed employee dashboard

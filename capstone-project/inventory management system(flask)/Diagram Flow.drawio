@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net" modified="2024-06-03T09:51:45.623Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="SUQZ5vFbXZJJ15KchXYI" version="24.4.13" type="device">
+  <diagram name="Page-1" id="hZVrFMgVspMoowWHBydF">
+    <mxGraphModel dx="1207" dy="533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="06dEU8kkynSzipZqZAPt-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="06dEU8kkynSzipZqZAPt-1" target="06dEU8kkynSzipZqZAPt-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="363" y="190" />
+              <mxPoint x="363" y="140" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="06dEU8kkynSzipZqZAPt-1" target="06dEU8kkynSzipZqZAPt-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-1" value="login page&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#96FFAF;" vertex="1" parent="1">
+          <mxGeometry x="200" y="160" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-2" value="signup for employee" style="ellipse;whiteSpace=wrap;html=1;fillColor=#DBFF4A;" vertex="1" parent="1">
+          <mxGeometry x="115" y="130" width="70" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-3" value="forgot pass" style="ellipse;whiteSpace=wrap;html=1;fillColor=#73FFB9;" vertex="1" parent="1">
+          <mxGeometry x="110" y="190" width="80" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-4" value="employee dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#32FF2B;" vertex="1" parent="1">
+          <mxGeometry x="425" y="110" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-5" value="items assigned to emploee" style="ellipse;whiteSpace=wrap;html=1;fillColor=#32FF2B;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-6" value="change password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#32FF2B;" vertex="1" parent="1">
+          <mxGeometry x="510" y="40" width="80" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-7" value="log out" style="ellipse;whiteSpace=wrap;html=1;fillColor=#21FF5C;" vertex="1" parent="1">
+          <mxGeometry x="590" y="30" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-8" value="admin dashboard" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#7DFF81;" vertex="1" parent="1">
+          <mxGeometry x="425" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-9" value="Employee Panel&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#37FF30;" vertex="1" parent="1">
+          <mxGeometry x="570" y="220" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-10" value="Items Panel" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-13" value="VIEW ADD UPDATE DELETE" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;" vertex="1" parent="1">
+          <mxGeometry x="560" y="300" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-15" value="Assign and Unassign Items" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="465" y="380" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-16" value="log out" style="ellipse;whiteSpace=wrap;html=1;fillColor=#51FF45;" vertex="1" parent="1">
+          <mxGeometry x="335" y="260" width="90" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="06dEU8kkynSzipZqZAPt-19" value="change password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#51FF45;" vertex="1" parent="1">
+          <mxGeometry x="255" y="280" width="80" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

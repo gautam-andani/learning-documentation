@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='login.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div id="message" class="message" style="display: none;">{{message}}</div>
+        <form class="form" id="loginForm">
+            <p class="form-title">Log in to your account</p>
+            <div class="input-container">
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            <input type="submit" value="Login" class="submit">
+        </form>
+        <p class="signup-link">
+            No account? <a href="{{ url_for('register') }}">Sign Up here</a>
+        </p>
+        <p class="signup-link">
+             <a href="#">forgot password</a>
+        </p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            fetch('/api/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({username: username, password: password})
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    if (data.first_login) {
+                        alert('Welcome! This is your first login. Please change your password.');
+                    }
+
+                    if (data.is_admin) {
+                        window.location.href = '/dashboard';
+                    } else {
+                        window.location.href = '/dashboard';
+                    }
+                } else {
+                    showMessage('Invalid email or password');
+                }
+            })
+            .catch(error => {
+                showMessage('An error occurred');
+            });
+        });
+
+        function showMessage(message) {
+            var messageDiv = document.getElementById('message');
+            messageDiv.innerText = message;
+            messageDiv.style.display = 'flex';
+            setTimeout(function() {
+                messageDiv.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>

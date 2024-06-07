@@ -1,0 +1,324 @@
+2024-06-04 01:56:39,487 [WARNING] app.main Login page has arrived
+2024-06-04 01:56:59,363 [INFO] app.main User None logged out
+2024-06-04 01:56:59,397 [WARNING] app.main Login page has arrived
+2024-06-04 02:04:04,717 [WARNING] app.main Login page has arrived
+2024-06-04 02:11:57,796 [WARNING] app.main Login page has arrived
+2024-06-04 02:12:01,552 [WARNING] app.main Login page has arrived
+2024-06-04 02:12:20,427 [ERROR] app.main Exception occurred while adding user hellos
+NoneType: None
+2024-06-04 02:14:49,198 [ERROR] app.main Exception occurred while adding user cutefanboy
+NoneType: None
+2024-06-04 02:15:35,559 [ERROR] app.main Exception occurred while adding user hellos
+NoneType: None
+2024-06-04 02:16:17,550 [INFO] app.main User hellos added by self
+2024-06-04 02:18:36,745 [INFO] app.main User helloso added by self
+2024-06-04 02:18:36,755 [WARNING] app.main Login page has arrived
+2024-06-04 02:19:41,338 [ERROR] app.main Exception occurred while adding user hellos
+NoneType: None
+2024-06-04 02:21:28,861 [WARNING] app.main Login page has arrived
+2024-06-04 02:21:32,902 [INFO] app.main User admin logged in
+2024-06-04 02:21:32,927 [INFO] app.main admin accessed the dashboard
+2024-06-04 02:21:32,938 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-04 02:35:33,696 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-04 02:36:52,131 [INFO] app.main User admin accessed password change form
+2024-06-04 02:36:54,252 [INFO] app.main admin accessed the dashboard
+2024-06-04 02:36:54,269 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-04 02:36:56,736 [INFO] app.main User admin logged out
+2024-06-04 02:36:56,770 [WARNING] app.main Login page has arrived
+2024-06-04 02:37:01,342 [WARNING] app.main Unauthorized access attempt for admin by None
+2024-06-04 03:00:11,611 [INFO] app.main User admin logged in
+2024-06-04 03:00:11,654 [INFO] app.main admin accessed the dashboard
+2024-06-04 03:00:11,667 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-04 03:00:20,870 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-04 04:07:04,312 [INFO] app.main User admin logged out
+2024-06-04 04:07:04,406 [WARNING] app.main Login page has arrived
+2024-06-04 04:07:16,136 [INFO] app.main User abc logged in
+2024-06-04 04:07:16,226 [INFO] app.main abc accessed the dashboard
+2024-06-04 04:07:16,253 [INFO] app.main Employee abc accessed employee dashboard
+2024-06-04 04:09:39,615 [INFO] app.main Employee abc accessed employee dashboard
+2024-06-04 04:09:45,380 [INFO] app.main User abc logged out
+2024-06-04 04:09:45,460 [WARNING] app.main Login page has arrived
+2024-06-04 04:09:50,787 [INFO] app.main User admin logged in
+2024-06-04 04:09:50,882 [INFO] app.main admin accessed the dashboard
+2024-06-04 04:09:50,905 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-04 04:10:49,577 [INFO] app.main Fetched employee and item list
+2024-06-04 04:10:54,461 [INFO] app.main Item 3 assigned to abc by admin admin
+2024-06-04 04:10:54,485 [INFO] app.main Fetched employee and item list
+2024-06-04 04:10:58,312 [INFO] app.main User admin logged out
+2024-06-04 04:10:58,410 [WARNING] app.main Login page has arrived
+2024-06-04 04:11:05,085 [INFO] app.main User abc logged in
+2024-06-04 04:11:05,138 [INFO] app.main abc accessed the dashboard
+2024-06-04 04:11:05,192 [INFO] app.main Employee abc accessed employee dashboard
+2024-06-04 04:11:14,125 [INFO] app.main User abc logged out
+2024-06-04 04:11:14,195 [WARNING] app.main Login page has arrived
+2024-06-04 04:13:09,445 [INFO] app.main User admin logged in
+2024-06-04 04:13:09,548 [INFO] app.main admin accessed the dashboard
+2024-06-04 04:13:09,577 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-04 04:26:23,164 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-04 04:26:55,494 [ERROR] app.main Exception (MySQLdb.OperationalError) (1292, "Incorrect date value: '' for column 'date_of_purchase' at row 1")
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, date_of_purchase=%s WHERE items.item_id = %s]
+[parameters: ('851', '553', '', 3)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) occurred while updating item 3
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\connections.py", line 257, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1292, "Incorrect date value: '' for column 'date_of_purchase' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 256, in update_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\connections.py", line 257, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (MySQLdb.OperationalError) (1292, "Incorrect date value: '' for column 'date_of_purchase' at row 1")
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, date_of_purchase=%s WHERE items.item_id = %s]
+[parameters: ('851', '553', '', 3)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-04 04:27:06,680 [INFO] app.main Item 3 updated by admin admin
+2024-06-04 05:16:34,080 [INFO] app.main Item 3 updated by admin admin
+2024-06-04 05:16:51,021 [ERROR] app.main Exception (MySQLdb.OperationalError) (1292, "Incorrect date value: '' for column 'date_of_purchase' at row 1")
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, date_of_purchase=%s WHERE items.item_id = %s]
+[parameters: ('8516', '553', '', 3)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) occurred while updating item 3
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\connections.py", line 257, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1292, "Incorrect date value: '' for column 'date_of_purchase' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 256, in update_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\connections.py", line 257, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (MySQLdb.OperationalError) (1292, "Incorrect date value: '' for column 'date_of_purchase' at row 1")
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, date_of_purchase=%s WHERE items.item_id = %s]
+[parameters: ('8516', '553', '', 3)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-04 05:17:55,173 [ERROR] app.main Exception (MySQLdb.OperationalError) (1292, "Incorrect date value: '' for column 'date_of_purchase' at row 1")
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, date_of_purchase=%s WHERE items.item_id = %s]
+[parameters: ('8516', '553', '', 3)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8) occurred while updating item 3
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\connections.py", line 257, in query
+    _mysql.connection.query(self, query)
+MySQLdb.OperationalError: (1292, "Incorrect date value: '' for column 'date_of_purchase' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 257, in update_item
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 85, in save_obj
+    _emit_update_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 912, in _emit_update_statements
+    c = connection.execute(
+        ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\connections.py", line 257, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.OperationalError: (MySQLdb.OperationalError) (1292, "Incorrect date value: '' for column 'date_of_purchase' at row 1")
+[SQL: UPDATE items SET serial_number=%s, bill_no=%s, date_of_purchase=%s WHERE items.item_id = %s]
+[parameters: ('8516', '553', '', 3)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2024-06-04 05:19:15,438 [INFO] app.main Item 3 updated by admin admin

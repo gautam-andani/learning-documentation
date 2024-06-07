@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Item Management</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin-top: 80px;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border-bottom: 1px solid #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        .menu {
+            position: relative;
+        }
+        .menu-button {
+            background-color: #00bfff;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+        }
+        .menu-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .menu-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .menu-content a:hover {
+            background-color: #f1f1f1;
+        }
+        .menu:hover .menu-content {
+            display: block;
+        }
+        .table-container {
+            margin-top: 100px;
+            width: 80%;
+        }
+        .items-list {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .items-list th, .items-list td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        .items-list th {
+            background-color: #00bfff;
+            color: white;
+        }
+        .items-list tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .items-list tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+        .add-item-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .add-item-form input {
+            margin: 5px;
+        }
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="welcome-message">Welcome, {{ session.get('username', '') }}!</div>
+        <div class="menu">
+            <button class="menu-button">Menu</button>
+            <div class="menu-content">
+                <a href="{{ url_for('password_form') }}">Change Password</a>
+                <a href="#" id="logout">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <a href="{{ url_for('admin_dashboard') }}">
+                <button>Back to Dashboard</button>
+            </a>
+        </div>
+        <div>
+            <a href="{{ url_for('item_assignment_page') }}">
+                <button>Item Assignment</button>
+            </a>
+        </div>
+        <div class="table-container">
+            <table class="items-list">
+                <thead>
+                    <tr>
+                        <th>Item Id</th>
+                        <th>Item Name</th>
+                        <th>Serial Number</th>
+                        <th>Bill No</th>
+                        <th>Date of Purchase</th>
+                        <th>Assigned To</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="items-tbody">
+                    <!-- Items will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <div class="add-item-form">
+            <input type="text" id="new-item-name" placeholder="Item Name" required>
+            <input type="text" id="new-serial-number" placeholder="Serial Number" required>
+            <input type="text" id="new-bill-no" placeholder="Bill No" required>
+            <input type="date" id="new-date-of-purchase" required>
+            <input type="date" id="new-warranty" placeholder="Warranty" required>
+            <button onclick="addItem()">Add Item</button>
+        </div>
+    </div>
+
+    <!-- Update Modal -->
+    <div id="updateModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Update Item</h2>
+            <input type="hidden" id="update-item-id">
+            <input type="text" id="update-serial-number" placeholder="Serial Number" required>
+            <input type="text" id="update-bill-no" placeholder="Bill No" required>
+            <input type="date" id="update-date-of-purchase" required>
+            <button onclick="submitUpdate()">Update Item</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('logout').addEventListener('click', function() {
+            fetch('{{ url_for("logout") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(response => {
+                if (response.redirected) {
+                    window.location.href = response.url;
+                } else {
+                    response.json().then(data => {
+                        if (data.success) {
+                            window.location.href = "{{ url_for('index') }}";
+                        } else {
+                            alert('Logout failed');
+                        }
+                    });
+                }
+            });
+        });
+
+        function fetchItems() {
+            fetch('{{ url_for("get_items") }}')
+                .then(response => response.json())
+                .then(data => {
+                    const tbody = document.getElementById('items-tbody');
+                    tbody.innerHTML = '';
+                    data.items.forEach(item => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${item.item_id}</td>
+                            <td>${item.item_name}</td>
+                            <td>${item.serial_number}</td>
+                            <td>${item.bill_no}</td>
+                            <td>${item.date_of_purchase}</td>
+                            <td>${item.assigned_to}</td>
+                            <td>
+                                <button onclick="openUpdateModal('${item.item_id}', '${item.serial_number}', '${item.bill_no}', '${item.date_of_purchase}',)">Update</button>
+                                <button onclick="deleteItem('${item.item_id}')">Delete</button>
+                                <button onclick="unassignItem('${item.item_id}')">Unassign</button>
+                            </td>
+                        `;
+                        tbody.appendChild(row);
+                    });
+                });
+        }
+
+        function addItem() {
+            const itemName = document.getElementById('new-item-name').value;
+            const serialNumber = document.getElementById('new-serial-number').value;
+            const billNo = document.getElementById('new-bill-no').value;
+            const dateOfPurchase = document.getElementById('new-date-of-purchase').value;
+            const warranty = document.getElementById('new-warranty').value;
+            
+            fetch('{{ url_for("add_item") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ item_name: itemName, serial_number: serialNumber, bill_no: billNo, date_of_purchase: dateOfPurchase, warranty: warranty })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    fetchItems();
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            });
+        }
+
+        function openUpdateModal(itemId, serialNumber, billNo, dateOfPurchase, assignedTo) {
+            document.getElementById('update-item-id').value = itemId;
+            document.getElementById('update-serial-number').value = serialNumber;
+            document.getElementById('update-bill-no').value = billNo;
+            document.getElementById('update-date-of-purchase').value = dateOfPurchase;
+            document.getElementById('updateModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('updateModal').style.display = 'none';
+        }
+
+        function submitUpdate() {
+            const itemId = document.getElementById('update-item-id').value;
+            const serialNumber = document.getElementById('update-serial-number').value;
+            const billNo = document.getElementById('update-bill-no').value;
+            const dateOfPurchase = document.getElementById('update-date-of-purchase').value;
+            const assignedTo = document.getElementById('update-assigned-to').value;
+
+            fetch('{{ url_for("update_item") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ item_id: itemId, serial_number: serialNumber, bill_no: billNo, date_of_purchase: dateOfPurchase, assigned_to: assignedTo })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    fetchItems();
+                    closeModal();
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            });
+        }
+
+        function deleteItem(itemId) {
+            fetch('{{ url_for("delete_item") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ item_id: itemId })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    fetchItems();
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            });
+        }
+
+        function unassignItem(itemId) {
+            fetch('{{ url_for("item_assignment") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ item_id: itemId, assigned_to: null })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    fetchItems();
+                } else {
+                    alert('Error: ' + data.error);
+                }
+            });
+        }
+
+        // Fetch items when the page loads
+        fetchItems();
+    </script>
+</body>
+</html>
