@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Assignment</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='login.css') }}">
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            margin-top: 80px;
+        }
+        .header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #1a1a1a;
+            color: #fff;
+            border-bottom: 1px solid #333;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+        }
+        .table-container {
+            margin-top: 100px;
+            width: 80%;
+        }
+        .items-list {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .items-list th, .items-list td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: left;
+        }
+        .items-list th {
+            background-color: #00bfff;
+            color: white;
+        }
+        .items-list tr:nth-child(even) {
+            background-color: #f2f2f2; /* Light grey for even rows */
+        }
+        
+        .items-list tr:nth-child(odd) {
+            background-color: #ffffff; /* White for odd rows */
+        }
+        .assignment-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .assignment-form select {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="welcome-message">Welcome, {{ session.get('username', '') }}!</div>
+        <div class="menu">
+            <button class="menu-button">Menu</button>
+            <div class="menu-content">
+                <a href="{{ url_for('password_form') }}">Change Password</a>
+                <a href="#" id="logout">Logout</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="table-container">
+            <table class="items-list">
+                <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Serial Number</th>
+                        <th>Assigned To</th>
+                        <th>Assign</th>
+                    </tr>
+                </thead>
+                <tbody id="unassigned-items-tbody">
+                    <!-- Unassigned items will be populated here by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+        <div class="assignment-form">
+            <select id="user-select">
+                <!-- Users will be populated here by JavaScript -->
+            </select>
+            <button onclick="assignItem()">Assign Item</button>
+        </div>
+    </div>
+    <script>
+        document.getElementById('logout').addEventListener('click', function() {
+            fetch('{{ url_for("logout") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            }).then(response => response.json()).then(data => {
+                if (data.success) {
+                    window.location.href = "{{ url_for('index') }}";
+                } else {
+                    alert('Logout failed');
+                }
+            });
+        });
+
+        function fetchUnassignedItemsAndUsers() {
+            fetch('{{ url_for("emp_and_item_list") }}')
+                .then(response => response.json())
+                .then(data => {
+                    const tbody = document.getElementById('unassigned-items-tbody');
+                    tbody.innerHTML = '';
+                    data.items.forEach(item => {
+                        if (!item.assigned_to) {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td>${item.item_id}</td>
+                                <td>${item.serial_number}</td>
+                                <td>${item.assigned_to || 'Unassigned'}</td>
+                                <td><input type="checkbox" data-item-id="${item.item_id}"></td>
+                            `;
+                            tbody.appendChild(row);
+                        }
+                    });
+                    const userSelect = document.getElementById('user-select');
+                    userSelect.innerHTML = '';
+                    data.users.forEach(user => {
+                        const option = document.createElement('option');
+                        option.value = user;
+                        option.textContent = user;
+                        userSelect.appendChild(option);
+                    });
+                });
+        }
+
+        function assignItem() {
+            const selectedUser = document.getElementById('user-select').value;
+            const checkboxes = document.querySelectorAll('#unassigned-items-tbody input[type="checkbox"]:checked');
+            checkboxes.forEach(checkbox => {
+                const itemId = checkbox.getAttribute('data-item-id');
+                fetch('{{ url_for("item_assignment") }}', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ item_id: itemId, assigned_to: selectedUser })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        fetchUnassignedItemsAndUsers();
+                    } else {
+                        alert('Error: ' + data.error);
+                    }
+                });
+            });
+        }
+
+        // Fetch unassigned items and users when the page loads
+        fetchUnassignedItemsAndUsers();
+    </script>
+</body>
+</html>

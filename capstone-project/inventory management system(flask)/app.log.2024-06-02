@@ -1,0 +1,178 @@
+2024-06-02 04:32:12,690 [INFO] app.main Our Admin has logged in
+2024-06-02 04:32:12,691 [INFO] app.main Our Admin admin has logged in
+2024-06-02 04:40:05,739 [WARNING] app.main Login page has arrived
+2024-06-02 16:49:22,513 [WARNING] app.main Login page has arrived
+2024-06-02 17:15:11,061 [WARNING] app.main Login page has arrived
+2024-06-02 17:15:16,201 [INFO] app.main User admin logged out
+2024-06-02 17:15:16,212 [INFO] app.main User admin logged in for the first time
+2024-06-02 17:15:17,777 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-02 17:15:20,182 [INFO] app.main User admin logged out
+2024-06-02 17:15:20,212 [WARNING] app.main Login page has arrived
+2024-06-02 17:15:24,826 [INFO] app.main User None logged out
+2024-06-02 17:15:24,830 [INFO] app.main User admin logged in for the first time
+2024-06-02 17:15:29,045 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-02 17:16:11,168 [INFO] app.main User admin logged out
+2024-06-02 17:16:11,192 [WARNING] app.main Login page has arrived
+2024-06-02 17:16:12,234 [WARNING] app.main Login page has arrived
+2024-06-02 17:16:16,438 [INFO] app.main User None logged out
+2024-06-02 17:16:16,441 [INFO] app.main User admin logged in for the first time
+2024-06-02 17:16:49,809 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-02 17:16:51,263 [INFO] app.main User admin logged out
+2024-06-02 17:16:51,283 [WARNING] app.main Login page has arrived
+2024-06-02 17:16:56,200 [INFO] app.main User None logged out
+2024-06-02 17:16:56,202 [WARNING] app.main Failed login attempt for username: admin
+2024-06-02 17:17:00,331 [INFO] app.main User None logged out
+2024-06-02 17:17:00,335 [INFO] app.main User admin logged in for the first time
+2024-06-02 17:17:01,272 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-02 17:17:08,487 [INFO] app.main User admin logged out
+2024-06-02 17:17:08,515 [WARNING] app.main Login page has arrived
+2024-06-02 17:17:13,206 [INFO] app.main User None logged out
+2024-06-02 17:17:13,213 [INFO] app.main User admin logged in for the first time
+2024-06-02 17:17:23,511 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-02 17:17:27,264 [INFO] app.main User admin logged out
+2024-06-02 17:17:27,291 [WARNING] app.main Login page has arrived
+2024-06-02 17:17:31,913 [INFO] app.main User None logged out
+2024-06-02 17:17:31,918 [INFO] app.main User admin logged in for the first time
+2024-06-02 17:17:39,385 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-02 17:18:52,598 [WARNING] app.main Attempt to add user with invalid email: abc@n.com
+2024-06-02 17:19:41,568 [INFO] app.main Fetched employee and item list
+2024-06-02 17:19:55,748 [INFO] app.main User abc added by admin admin
+2024-06-02 17:19:59,376 [INFO] app.main Fetched employee and item list
+2024-06-02 17:20:04,234 [ERROR] app.main Exception (MySQLdb.IntegrityError) (1062, "Duplicate entry 'abc' for key 'user.PRIMARY'")
+[SQL: INSERT INTO user (username, password, email, is_admin, first_login) VALUES (%s, %s, %s, %s, %s)]
+[parameters: ('abc', 'abc', 'abc@hotpot.com', False, True)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj) occurred while adding user abc
+Traceback (most recent call last):
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\connections.py", line 257, in query
+    _mysql.connection.query(self, query)
+MySQLdb.IntegrityError: (1062, "Duplicate entry 'abc' for key 'user.PRIMARY'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\g_and\Desktop\inventory management system\app\main.py", line 119, in add_user
+    db.session.commit()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\scoping.py", line 597, in commit
+    return self._proxied.commit()
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1972, in commit
+    trans.commit(_to_root=True)
+  File "<string>", line 2, in commit
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1257, in commit
+    self._prepare_impl()
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\state_changes.py", line 139, in _go
+    ret_value = fn(self, *arg, **kw)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 1232, in _prepare_impl
+    self.session.flush()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4296, in flush
+    self._flush(objects)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4431, in _flush
+    with util.safe_reraise():
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\util\langhelpers.py", line 146, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\session.py", line 4392, in _flush
+    flush_context.execute()
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\orm\persistence.py", line 1048, in _emit_insert_statements
+    result = connection.execute(
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1422, in execute
+    return meth(
+           ^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\sql\elements.py", line 514, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1644, in _execute_clauseelement
+    ret = self._execute_context(
+          ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1850, in _execute_context
+    return self._exec_single_context(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1990, in _exec_single_context
+    self._handle_dbapi_exception(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 2357, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\base.py", line 1971, in _exec_single_context
+    self.dialect.do_execute(
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\sqlalchemy\engine\default.py", line 919, in do_execute
+    cursor.execute(statement, parameters)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 179, in execute
+    res = self._query(mogrified_query)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\cursors.py", line 330, in _query
+    db.query(q)
+  File "C:\Users\g_and\AppData\Local\Programs\Python\Python311\Lib\site-packages\MySQLdb\connections.py", line 257, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb.IntegrityError) (1062, "Duplicate entry 'abc' for key 'user.PRIMARY'")
+[SQL: INSERT INTO user (username, password, email, is_admin, first_login) VALUES (%s, %s, %s, %s, %s)]
+[parameters: ('abc', 'abc', 'abc@hotpot.com', False, True)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+2024-06-02 20:23:05,062 [WARNING] app.main Login page has arrived
+2024-06-02 20:24:07,565 [WARNING] app.main Login page has arrived
+2024-06-02 20:25:32,856 [WARNING] app.main Login page has arrived
+2024-06-02 20:25:34,317 [WARNING] app.main Login page has arrived
+2024-06-02 20:25:56,482 [WARNING] app.main Login page has arrived
+2024-06-02 20:36:41,864 [WARNING] app.main Login page has arrived
+2024-06-02 20:36:59,965 [WARNING] app.main Login page has arrived
+2024-06-02 20:38:04,744 [WARNING] app.main Login page has arrived
+2024-06-02 20:39:01,642 [WARNING] app.main Login page has arrived
+2024-06-02 20:39:16,675 [WARNING] app.main Login page has arrived
+2024-06-02 20:39:19,762 [WARNING] app.main Login page has arrived
+2024-06-02 20:41:57,763 [WARNING] app.main Login page has arrived
+2024-06-02 20:42:12,637 [WARNING] app.main Login page has arrived
+2024-06-02 20:44:03,953 [WARNING] app.main Login page has arrived
+2024-06-02 20:45:13,541 [WARNING] app.main Login page has arrived
+2024-06-02 20:46:15,053 [WARNING] app.main Login page has arrived
+2024-06-02 20:46:49,970 [WARNING] app.main Login page has arrived
+2024-06-02 20:47:41,808 [WARNING] app.main Login page has arrived
+2024-06-02 20:50:04,285 [WARNING] app.main Login page has arrived
+2024-06-02 20:50:08,671 [INFO] app.main User admin logged out
+2024-06-02 20:50:08,680 [INFO] app.main User admin logged in for the first time
+2024-06-02 20:50:10,869 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-02 20:50:12,816 [INFO] app.main User admin logged out
+2024-06-02 20:50:12,850 [WARNING] app.main Login page has arrived
+2024-06-02 20:50:50,672 [WARNING] app.main Login page has arrived
+2024-06-02 20:53:14,100 [WARNING] app.main Login page has arrived
+2024-06-02 20:53:21,367 [WARNING] app.main Login page has arrived
+2024-06-02 20:54:20,316 [WARNING] app.main Login page has arrived
+2024-06-02 20:54:36,429 [WARNING] app.main Login page has arrived
+2024-06-02 20:54:55,886 [WARNING] app.main Login page has arrived
+2024-06-02 20:54:58,092 [WARNING] app.main Login page has arrived
+2024-06-02 20:54:58,903 [WARNING] app.main Login page has arrived
+2024-06-02 20:54:59,731 [WARNING] app.main Login page has arrived
+2024-06-02 20:55:00,453 [WARNING] app.main Login page has arrived
+2024-06-02 20:56:10,833 [WARNING] app.main Login page has arrived
+2024-06-02 21:08:12,174 [WARNING] app.main Login page has arrived
+2024-06-02 21:08:43,999 [WARNING] app.main Login page has arrived
+2024-06-02 21:09:01,042 [WARNING] app.main Login page has arrived
+2024-06-02 21:09:22,409 [WARNING] app.main Login page has arrived
+2024-06-02 21:26:59,051 [WARNING] app.main Login page has arrived
+2024-06-02 21:30:39,546 [INFO] app.main User None logged out
+2024-06-02 21:30:39,553 [INFO] app.main User admin logged in for the first time
+2024-06-02 21:30:41,638 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-02 23:07:44,670 [INFO] app.main User admin logged out
+2024-06-02 23:07:44,702 [WARNING] app.main Login page has arrived
+2024-06-02 23:54:35,911 [INFO] app.main User None logged out
+2024-06-02 23:54:35,918 [WARNING] app.main Failed login attempt for username: aaa
+2024-06-02 23:56:10,810 [WARNING] app.main Login page has arrived
+2024-06-02 23:56:23,661 [INFO] app.main User None logged out
+2024-06-02 23:56:23,663 [WARNING] app.main Failed login attempt for username: s

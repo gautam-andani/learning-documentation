@@ -1,0 +1,17 @@
+2024-06-06 23:51:23,008 [WARNING] app.main Login page has arrived
+2024-06-06 23:51:29,721 [INFO] app.main User admin logged in for the first time
+2024-06-06 23:51:31,613 [INFO] app.main admin accessed the dashboard
+2024-06-06 23:51:31,622 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-06 23:51:42,041 [INFO] app.main User admin logged out
+2024-06-06 23:51:42,068 [WARNING] app.main Login page has arrived
+2024-06-06 23:51:43,998 [WARNING] app.auth Unauthorized access attempt for admin by None
+2024-06-06 23:56:17,649 [INFO] app.main User admin logged in
+2024-06-06 23:56:17,691 [INFO] app.main admin accessed the dashboard
+2024-06-06 23:56:17,702 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-06 23:58:59,654 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-06 23:59:01,943 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-06 23:59:05,367 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-06 23:59:08,087 [INFO] app.main User admin accessed password change form
+2024-06-06 23:59:09,506 [INFO] app.main admin accessed the dashboard
+2024-06-06 23:59:09,517 [INFO] app.main Admin admin accessed admin dashboard
+2024-06-06 23:59:13,969 [INFO] app.main Fetched employee and item list
