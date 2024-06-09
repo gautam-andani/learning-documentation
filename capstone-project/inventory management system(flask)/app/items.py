@@ -2,7 +2,8 @@ from .models import Item,  db
 from . import app
 from .auth import *
 from .main import *
-
+from datetime import datetime
+from email.utils import parsedate_to_datetime
 from flask import request, jsonify, render_template
 
 @app.route('/item/add', methods=['POST'])
@@ -12,8 +13,13 @@ def add_item():
     item_name = data.get('item_name')
     serial_number = int(data.get('serial_number'))
     bill_no = int(data.get('bill_no'))
-    date_of_purchase = data.get('date_of_purchase')
-    warranty = data.get('warranty')
+    date_of_purchase = data.get('date_of_purchase',None) if data.get('date_of_purchase',None) !="" else None
+    warranty = data.get('warranty',None) if data.get('warranty',None) != "" else None
+    print(date_of_purchase, warranty,'#############################')
+    if app.config['TESTING']:
+        date_of_purchase = parsedate_to_datetime(date_of_purchase).date()
+        warranty = parsedate_to_datetime(warranty).date()
+    print(date_of_purchase, warranty,'#############################')
 
     try:
         new_item = Item(item_name=item_name, serial_number=serial_number, bill_no=bill_no, date_of_purchase=date_of_purchase, warranty=warranty)
@@ -33,7 +39,11 @@ def update_item():
     serial_number = data.get('serial_number')
     bill_no = data.get('bill_no')
     date_of_purchase = data.get('date_of_purchase')
+    warranty = data.get('warranty')
     assigned_to = data.get('assigned_to') if data.get('assigned_to')!='null' else None
+    if app.config['TESTING']:
+        date_of_purchase = parsedate_to_datetime(date_of_purchase).date()
+        warranty = parsedate_to_datetime(warranty).date()
     try:
         item = Item.query.filter_by(item_id=item_id).first()
         item.serial_number = serial_number
