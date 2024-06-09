@@ -172,8 +172,8 @@
             <input type="text" id="new-item-name" placeholder="Item Name" required>
             <input type="text" id="new-serial-number" placeholder="Serial Number" required>
             <input type="text" id="new-bill-no" placeholder="Bill No" required>
-            <input type="date" id="new-date-of-purchase" required>
-            <input type="date" id="new-warranty" placeholder="Warranty" required>
+            <input type="date" id="new-date-of-purchase">
+            <input type="date" id="new-warranty" placeholder="Warranty">
             <button onclick="addItem()">Add Item</button>
         </div>
     </div>
@@ -187,6 +187,7 @@
             <input type="text" id="update-serial-number" placeholder="Serial Number" required>
             <input type="text" id="update-bill-no" placeholder="Bill No" required>
             <input type="date" id="update-date-of-purchase" required>
+            <input type="date" id="update-warranty" required>
             <button onclick="submitUpdate()">Update Item</button>
         </div>
     </div>
@@ -246,6 +247,9 @@
             const dateOfPurchase = document.getElementById('new-date-of-purchase').value;
             const warranty = document.getElementById('new-warranty').value;
             
+            const dateOfPurchaseValue = dateOfPurchase ? dateOfPurchase : null;
+            const warrantyValue = warranty ? warranty : null;
+
             fetch('{{ url_for("add_item") }}', {
                 method: 'POST',
                 headers: {
@@ -280,6 +284,7 @@
             const serialNumber = document.getElementById('update-serial-number').value;
             const billNo = document.getElementById('update-bill-no').value;
             const dateOfPurchase = document.getElementById('update-date-of-purchase').value;
+            const warranty = document.getElementById('update-warranty').value;
             const assignedTo = document.getElementById('update-assigned-to').value;
 
             fetch('{{ url_for("update_item") }}', {

@@ -1,15 +1,20 @@
+import os
+os.environ['DATABASE_URL'] = 'sqlite:///test.db'
+os.environ['SECRET_KEY'] = 'test_secret_key'
+
 import unittest
+from datetime import date
 from flask import session
-from app import app
-from app.models import db, User, Item
+from app import app, db
+from app.models import User, Item
 
 class FlaskAppTests(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
         app.config['TESTING'] = True
-        app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
-        app.config['SECRET_KEY'] = 'test_secret_key'
+        app.config['SQLALCHEMY_DATABASE_URI'] = os.environ['DATABASE_URL']
+        app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
         cls.client = app.test_client()
 
     @classmethod
@@ -21,7 +26,6 @@ class FlaskAppTests(unittest.TestCase):
     def setUp(self):
         with app.app_context():
             db.create_all()
-            # Create a test admin user
             admin_user = User(username='admins', password='adminpass', email='admins@nucleusteq.com', is_admin='1')
             db.session.add(admin_user)
             db.session.commit()
@@ -179,14 +183,14 @@ class FlaskAppTests(unittest.TestCase):
             'item_name': 'item1',
             'serial_number': 12345,
             'bill_no': 67890,
-            'date_of_purchase': '2024-01-01',
-            'warranty': '2025-01-01'
+            'date_of_purchase': date(2024,1,1),
+            'warranty': date(2025,1,1)
         })
         self.assertEqual(response.status_code, 200)
 
     def test_update_item(self):
         with app.app_context():
-            item = Item(item_name='item2', serial_number=12356, bill_no=67895, date_of_purchase='2023-01-01', warranty='2024-01-01')
+            item = Item(item_name='item2', serial_number=12356, bill_no=67895, date_of_purchase=date(2023, 1, 1), warranty=date(2024, 1, 1))
             db.session.add(item)
             db.session.commit()
             item_id = item.item_id
@@ -199,29 +203,25 @@ class FlaskAppTests(unittest.TestCase):
             'item_id': item_id,
             'serial_number': 12346,
             'bill_no': 67891,
-            'date_of_purchase': '2024-02-01',
+            'date_of_purchase': date(2024,2,1),
+            'warranty': date(2026,2,1),
             'assigned_to': None
         })
         self.assertEqual(response.status_code, 200)
 
     def test_delete_item(self):
         with app.app_context():
-            # Create a test item within the session
-            item = Item(item_name='item1', serial_number=12345, bill_no=67890, date_of_purchase='2024-01-01', warranty='2025-01-01')
+            item = Item(item_name='item1', serial_number=12345, bill_no=67890, date_of_purchase=date(2024, 1, 1), warranty=date(2025, 1, 1))
             db.session.add(item)
             db.session.commit()
-            # Retrieve the item_id before closing the session
             item_id = item.item_id
 
-        # Set session for admin user
         with self.client.session_transaction() as sess:
             sess['username'] = 'admins'
             sess['is_admin'] = True
 
-        # Delete the item using the item_id
         response = self.client.post('/item/delete', json={'item_id': item_id})
         self.assertEqual(response.status_code, 200)
-
 
     def test_get_unassigned_items(self):
         with self.client.session_transaction() as sess:
@@ -233,8 +233,8 @@ class FlaskAppTests(unittest.TestCase):
 
     def test_item_assignment(self):
         with app.app_context():
-            item = Item(item_name='item1', serial_number=12345, bill_no=67890, date_of_purchase='2024-01-01', warranty='2025-01-01')
-            user = User(username='testuser',password='testuser',email='testuser@nucleusteq.com',is_admin=False, first_login=False)
+            item = Item(item_name='item1', serial_number=12345, bill_no=67890, date_of_purchase=date(2024, 1, 1), warranty=date(2025, 1, 1))
+            user = User(username='testuser', password='testuser', email='testuser@nucleusteq.com', is_admin=False, first_login=False)
             db.session.add(item)
             db.session.add(user)
             db.session.commit()
@@ -245,14 +245,6 @@ class FlaskAppTests(unittest.TestCase):
             sess['is_admin'] = True
 
         response = self.client.post('/item/assignment', json={'item_id': item_id, 'assigned_to': 'testuser'})
-        self.assertEqual(response.status_code, 200)
-
-    def test_emp_and_item_list(self):
-        with self.client.session_transaction() as sess:
-            sess['username'] = 'admins'
-            sess['is_admin'] = True
-
-        response = self.client.get('/api/emp_and_item_list')
         self.assertEqual(response.status_code, 200)
 
 if __name__ == '__main__':

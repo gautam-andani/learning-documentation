@@ -1,12 +1,12 @@
 from flask import Flask
-import mysql.connector
+import os
 from app.utils.logging_config import setup_logging
 from flask_sqlalchemy import SQLAlchemy
 
 setup_logging()
 app = Flask(__name__, template_folder='../templates',static_folder='../static')
 app.secret_key = "My-Secret_key"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@localhost/world'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL','mysql://root:root@localhost/world')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # db = SQLAlchemy(app)
