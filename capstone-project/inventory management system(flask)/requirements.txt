@@ -2,3 +2,6 @@ flask_sqlalchemy
 sqlalchemy
 flask
 mysql-connector
+mysqlclient 
+pymysql
+cryptography
