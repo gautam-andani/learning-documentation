@@ -10,3 +10,8 @@ pandas cheetsheet: https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf
 # Simple notes:
 
 https://docs.google.com/document/d/1RAA0bfQZMJhL4X9xc48fCt7YNcipbPTW2CSbMVOepVs/edit?usp=sharing
+
+# To run with docker go to dir
+
+cd "learning-documentation\capstone-project\inventory management system(flask)"
+docker-compose up --build
