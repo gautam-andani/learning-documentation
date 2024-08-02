@@ -10,7 +10,7 @@ services:
       - DATABASE_URL=mysql+pymysql://root:rootpassword@db:3306/world
     depends_on:
       - db
-    restart: 'always'
+    restart: on-failure
     volumes:
       - .:/app
     command: flask run --host=0.0.0.0
