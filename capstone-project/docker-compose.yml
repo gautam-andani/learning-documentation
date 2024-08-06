@@ -1,0 +1,29 @@
+version: '1'
+
+services:
+  web:
+    image: gautamandani/inventory-web:two
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+      - DATABASE_URL=mysql+pymysql://root:rootpassword@db:3306/world
+    depends_on:
+      - db
+    restart: on-failure
+    volumes:
+      - .:/app
+    command: flask run --host=0.0.0.0
+  
+  db:
+    image: mysql
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: world
+    volumes:
+    - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
